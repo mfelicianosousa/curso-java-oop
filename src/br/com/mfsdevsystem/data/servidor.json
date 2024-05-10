@@ -1,0 +1,17 @@
+[
+	{
+	  "matricula":"" ,
+	  "nome":"",
+	  "foto":"",
+	  "orgao":"",
+	  "vinculo":"",
+	  "cargo":"",
+	  "lotacao":"",
+	  "exercicio":"",
+	  "email":"",
+	  "telefone":"",
+	  "celular":"",
+	  "cpf":"",
+	  "naturalidade":""
+	}
+]
