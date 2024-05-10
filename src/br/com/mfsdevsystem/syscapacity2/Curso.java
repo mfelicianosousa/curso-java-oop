@@ -1,4 +1,7 @@
-package br.com.mfsdevsystem.unidade4;
+package br.com.mfsdevsystem.syscapacity2;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /*
  * Author: Marcelino Feliciano de Sousa
@@ -16,10 +19,12 @@ public class Curso {
     private double valor;
     private String site;
     private String situacao;
+    
+    // Reuso - Associação
+    private List<ServidorPublico> servidores = new LinkedList<ServidorPublico>();
 
     // Construtor privado para impedir a criação direta de objetos Curso
     private Curso() {}
-
     
     public Curso(int idCurso, String nome, String foto, String formaRealizacao, String ofertante, int vagas,
 			double valor) {
@@ -32,8 +37,6 @@ public class Curso {
 		this.vagas = vagas;
 		this.valor = valor;
 	}
-    
-   
 
 	// Método para obter um Builder para criar instâncias de Curso
     public static Builder builder() {
@@ -78,8 +81,15 @@ public class Curso {
         return situacao;
     }
 
-    
-    @Override
+    public void getServidores() {
+		System.out.println( servidores ) ;
+	}
+
+	public void setServidores(ServidorPublico servidor) {
+		this.servidores.add( servidor );
+	}
+
+	@Override
 	public String toString() {
 		return "Curso [idCurso=" + idCurso + ", nome=" + nome + ", formaRealizacao=" + formaRealizacao + ", ofertante="
 				+ ofertante + ", valor=" + valor + "]";

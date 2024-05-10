@@ -48,30 +48,57 @@ public class ServidorPublico {
         return orgao;
     }
 
-    public String getVinculo() {
+    public void setOrgao(String orgao) {
+		this.orgao = orgao;
+	}
+
+	public String getVinculo() {
         return vinculo;
     }
+	public void setVinculo(String vinculo) {
+		this.vinculo = vinculo;
+	}
 
     public String getCargo() {
         return cargo;
     }
 
-    public String getLotacao() {
+    public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	public String getLotacao() {
         return lotacao;
     }
-
+    
+	public void setLotacao(String lotacao) {
+		this.lotacao = lotacao;
+	}
+	
     public String getExercicio() {
         return exercicio;
     }
-
+    
+    public void setExercicio(String exercicio) {
+		this.exercicio = exercicio;
+	}
+    
     public String getEmail() {
         return email;
     }
-
+    
+    public void setEmail(String email) {
+		this.email = email;
+	}
+    
     public String getTelefone() {
         return telefone;
     }
 
+    public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+    
     public String getCelular() {
         return celular;
     }
@@ -87,7 +114,10 @@ public class ServidorPublico {
     public double getSalario() {
 		return salario;
 	}
-    
+
+    public void setSalario(double salario) {
+		this.salario = salario;
+	}
     @Override
 	public String toString() {
 		return "ServidorPublico [matricula=" + matricula + ", nome=" + nome + ", orgao=" + orgao + ", vinculo="
